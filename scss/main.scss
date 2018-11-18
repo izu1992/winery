@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.item {
+    margin: 5px;
+    //border: 1px solid red;
+}
+
+.grid-container {
+    //border: 2px solid black;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.brown {
+    background-color: #583837;
+}
+
+.orange {
+    background-color: #D96E3F;
+}
+
+.logo {
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.brown {
+    padding: 10%;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.wine {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    background-image: url('../images/wino.jpg');
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.terrace {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url('../images/taras.jpg');
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hotel {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    background-image: url('../images/hotel.jpg');
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.orange {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+.contact {
+    font-size: 25px;
+    background-color: #583837;
+    height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//.menu {
+//    display: none;
+//}
+//
+//.orange:hover {
+//    .menu {
+//        display: block;
+//    }
+//}
+
+
+//BLUR
+
+$bg: rgba(0,0,0, 0.3);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg,
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    transition: .5s all;
+    border-radius: 3px;
+}
+
+.bg {
+    float: left;
+    position: relative;
+    margin: .5%;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        background: $bg;
+        color: #583837;
+        opacity: 0;
+    }
+    &:hover {
+        .overlay {
+            opacity: 1;
+        }
+    }
+}
+
+.menu {
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+//buttons
+.btn {
+    text-align: center;
+    color: white;
+    height: 2em;
+    width: 80%;
+    padding: 1.5em 1em;
+    margin: 1em auto;
+    background-color: #D96E3F;
+    //border: 1px solid #583837;
+    border-radius: 5px;
+    text-transform: uppercase;
+    //letter-spacing: 0.5em;
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+    outline: 0;
+}
+
+.btn:hover {
+    letter-spacing: 0.4em;
+    background-color: #583837;
+    color: white;
+
+}
