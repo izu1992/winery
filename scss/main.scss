@@ -24,6 +24,9 @@
 
 .brown {
     background-color: #583837;
+    p {
+        font-weight: bold;
+    }
 }
 
 .orange {
@@ -181,7 +184,7 @@ a {
 }
 
 .btn:hover {
-    letter-spacing: 0.4em;
+    letter-spacing: 0.2em;
     background-color: #583837;
     color: white;
 
