@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:300,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="grid-container2">
+    <div class="item-page logo-page"></div>
+    <div class="item-page header">
+        <div class="menu-page">
+            <ul>
+                <li class="btn2"><a href="./index.html">Home</a></li>
+                <li class="btn2"><a href="./onas.html">O nas</a></li>
+                <li class="btn2"><a href="./winnica.html">Winnica</a></li>
+                <li class="btn2"><a href="./hotel.html">Hotel</a></li>
+                <li class="btn2"><a href="./restauracja.html">Restauracja</a></li>
+                <li class="btn2"><a href="./aktywnosci.html">Aktywności</a></li>
+                <li class="btn2"><a href="./wyprawy.html">Wyprawy</a></li>
+                <li class="btn2 gallery-btn"><a href="#">Galeria</a>
+                    <ul>
+                        <li class="btn3"><a href="./galeria-photo.html">Zdjęcia</a></li>
+                        <li class="btn3"><a href="./galeria-video.html">Filmy</a></li>
+                    </ul>
+                </li>
+                <li class="btn2"><a href="./kontakt.html">Kontakt</a></li>
+                <!--<li class="btn2"><a href="./rezerwacja.html">Rezerwacja</a></li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="item-page cover"></div>
+    <div class="item-page content">
+        <div class="container">
+
+            <form id="formularzKontaktowy" class="form-horizontal" action="form.php" method="post">
+
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                        <input type="text" name="email" class="input-xlarge" id="inputEmail" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="inputSubject">Temat</label>
+                    <div class="controls">
+                        <input type="text" name="subject" class="input-xlarge" id="inputSubject" placeholder="Temat wiadomości">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="inputMessage">Wiadomość</label>
+                    <div class="controls">
+                        <textarea type="text" name="message" class="input-xlarge" id="inputMessage" placeholder="Twoja wiadomość" rows="6"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="item-page photo"><img src="./images/hotel.jpg" alt="logo"></div>
+    <div class="item-page contact"><h4>Rezerwacja:&nbsp;</h4>+995 557 488 652 | reservation@chateaunapareuli.pl</div>
+    <div class="item footer">Copyright © Chateau Napareuli 2018
+        <div class="lang"><a href="./kontakt.html">PL</a></div>
+        <div class="lang"><a href="./en/contact.html">EN</a></div>
+    </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

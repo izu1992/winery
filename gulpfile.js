@@ -45,5 +45,5 @@ gulp.task( 'watch', function(){
     gulp.watch( 'scss/**/*.scss', ['sass'] );
 
     // Obserwacja HTML'a
-    gulp.watch('./index.html', browserSync.reload);
+    gulp.watch('./index-en.html', browserSync.reload);
 });
